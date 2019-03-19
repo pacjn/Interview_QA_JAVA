@@ -1,16 +1,11 @@
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 public class test {
     public static void main(String[] args){
+        String str1 = new StringBuffer("减损").append("萨").toString();
+        System.out.println(str1.intern()==str1);
 
-//        Byte abYte =Byte.parseByte(121);
-        Integer aInt =new Integer("111111");
-        Long along =9121732613612278L;
-//        Boolean abool = Boolean.parseBoolean(true);
-
-//        Character acah= new Character("C");
-        String a = instanceof(aInt);
-        System.out.print();
+        String str2 = new StringBuffer("ja").append("va").toString();
+        System.out.println(str2.intern()==str2);
 
     }
 
